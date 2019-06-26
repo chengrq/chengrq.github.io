@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <!-- Head tag -->
 <head><meta name="generator" content="Hexo 3.9.0">
@@ -204,7 +204,7 @@ Check if a">
 
 <h3 id="Check-if-apache-is-running"><a href="#Check-if-apache-is-running" class="headerlink" title="Check if apache is running"></a>Check if apache is running</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl status apache2</span><br></pre></td></tr></table></figure>
 
-<p><img src="/2019/06/22/Apache-Configuration/Check-Apache-Service-in-Ubuntu.png" alt></p>
+<p><img src="/2019/06/22/Apache/Check-Apache-Service-in-Ubuntu.png" alt></p>
 <h3 id="Apache-Configuration"><a href="#Apache-Configuration" class="headerlink" title="Apache Configuration"></a>Apache Configuration</h3><p>Next, if the UFW firewall is enabled and running on your system, you need to open ports 80 and 443 to allow the client to send requests to the Apache web server via HTTP and HTTPS respectively, then reload the firewall settings using the following command.</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ufw allow 80/tcp</span><br><span class="line">$ sudo ufw allow 443/tcp</span><br><span class="line">$ sudo ufw reload</span><br></pre></td></tr></table></figure>
 
