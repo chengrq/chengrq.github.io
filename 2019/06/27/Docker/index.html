@@ -13,7 +13,10 @@
     
 
     
-        <meta name="description" content="星期一">
+        <meta name="description" content="容器的典型生命周期：创建、管理、停止、删除
+docker run1$ sudo docker run --name chengrq_01 -i -t ubuntu /bin/bash
+
+-i 保证容器中的STDIN是开启的-t 为要创建的容器分配一个伪tty终端–name 为容器指定一个名称ubun">
     
 
     <!--Author-->
@@ -28,7 +31,10 @@
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="星期一">
+        <meta property="og:description" content="容器的典型生命周期：创建、管理、停止、删除
+docker run1$ sudo docker run --name chengrq_01 -i -t ubuntu /bin/bash
+
+-i 保证容器中的STDIN是开启的-t 为要创建的容器分配一个伪tty终端–name 为容器指定一个名称ubun">
     
 
     <!--Open Graph Site Name-->
@@ -193,7 +199,22 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>星期一</p>
+                <p>容器的典型生命周期：创建、管理、停止、删除</p>
+<h3 id="docker-run"><a href="#docker-run" class="headerlink" title="docker run"></a>docker run</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker run --name chengrq_01 -i -t ubuntu /bin/bash</span><br></pre></td></tr></table></figure>
+
+<p>-i 保证容器中的STDIN是开启的<br>-t 为要创建的容器分配一个伪tty终端<br>–name 为容器指定一个名称<br>ubuntu 基于ubuntu镜像来创建容器<br>bin/bash 启动Bash shell</p>
+<h3 id="docker-start"><a href="#docker-start" class="headerlink" title="docker start"></a>docker start</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker start chengrq_01</span><br></pre></td></tr></table></figure>
+
+<p>重新启动已经停止的容器</p>
+<h3 id="docker-ps"><a href="#docker-ps" class="headerlink" title="docker ps"></a>docker ps</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker ps -a</span><br></pre></td></tr></table></figure>
+
+<p>查看正在运行的docker<br>-a 查看所有docker</p>
+<h3 id="docker-rm"><a href="#docker-rm" class="headerlink" title="docker rm"></a>docker rm</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker rm chengrq_01</span><br></pre></td></tr></table></figure>
+
+<p>删除容器</p>
+<h3 id="docker-image"><a href="#docker-image" class="headerlink" title="docker image"></a>docker image</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo docker images</span><br></pre></td></tr></table></figure>
+
+<p>列出docker镜像</p>
 
 
                 
