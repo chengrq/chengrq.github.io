@@ -13,10 +13,10 @@
     
 
     
-        <meta name="description" content="Here explains how to install Apache web server on Ubuntu 18.04
+        <meta name="description" content="这里介绍如何在Ubuntu 18.04上安装ApacheWeb服务器
 Install Apache on Ubuntu 18.0412$ sudo apt update$ sudo apt install apache2
 
-Check if a">
+Check if apache is running1$ sudo syst">
     
 
     <!--Author-->
@@ -31,10 +31,10 @@ Check if a">
 
     <!--Open Graph Description-->
     
-        <meta property="og:description" content="Here explains how to install Apache web server on Ubuntu 18.04
+        <meta property="og:description" content="这里介绍如何在Ubuntu 18.04上安装ApacheWeb服务器
 Install Apache on Ubuntu 18.0412$ sudo apt update$ sudo apt install apache2
 
-Check if a">
+Check if apache is running1$ sudo syst">
     
 
     <!--Open Graph Site Name-->
@@ -199,13 +199,13 @@ Check if a">
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>Here explains how to install Apache web server on Ubuntu 18.04</p>
+                <p>这里介绍如何在Ubuntu 18.04上安装ApacheWeb服务器</p>
 <h3 id="Install-Apache-on-Ubuntu-18-04"><a href="#Install-Apache-on-Ubuntu-18-04" class="headerlink" title="Install Apache on Ubuntu 18.04"></a>Install Apache on Ubuntu 18.04</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br><span class="line">$ sudo apt install apache2</span><br></pre></td></tr></table></figure>
 
 <h3 id="Check-if-apache-is-running"><a href="#Check-if-apache-is-running" class="headerlink" title="Check if apache is running"></a>Check if apache is running</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo systemctl status apache2</span><br></pre></td></tr></table></figure>
 
 <p><img src="/2019/06/26/Apache/Check-Apache-Service-in-Ubuntu.png" alt></p>
-<h3 id="Apache-Configuration"><a href="#Apache-Configuration" class="headerlink" title="Apache Configuration"></a>Apache Configuration</h3><p>Next, if the UFW firewall is enabled and running on the system, you need to open ports 80 and 443 to allow the client to send requests to the Apache web server via HTTP and HTTPS respectively, then reload the firewall settings using the following command.</p>
+<h3 id="Apache-Configuration"><a href="#Apache-Configuration" class="headerlink" title="Apache Configuration"></a>Apache Configuration</h3><p>接下来，如果启用了UFW防火墙，则需要打开端口80和443，以允许客户端分别通过HTTP和HTTPS向Apache Web服务器发送请求，然后使用以下命令重新加载防火墙设置</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ sudo ufw allow 80/tcp</span><br><span class="line">$ sudo ufw allow 443/tcp</span><br><span class="line">$ sudo ufw reload</span><br></pre></td></tr></table></figure>
 
 
